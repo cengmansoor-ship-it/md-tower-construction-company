@@ -1,0 +1,55 @@
+# ==========================================================================
+# MD Tower Construction Company - Management System
+# Git ignore rules
+# ==========================================================================
+
+# ---- Dependencies ----
+node_modules/
+**/node_modules/
+# Backup copies of dependency folders (e.g. "node_modules ۰۱")
+node_modules*/
+**/node_modules*/
+.pnpm-store/
+
+# ---- Environment & secrets ----
+.env
+.env.*
+!.env.example
+*.local
+
+# ---- Build output ----
+dist/
+**/dist/
+build/
+**/build/
+out-tsc/
+*.tsbuildinfo
+.cache/
+.local/
+
+# ---- Logs ----
+*.log
+logs/
+**/.codex-logs/
+
+# ---- Runtime data (uploads, sqlite, cookies) ----
+**/uploads/
+**/data/
+*.sqlite
+*.sqlite3
+test-cookies.txt
+
+# ---- OS / editors ----
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ---- Replit ----
+.replit
+.replit-artifact/
